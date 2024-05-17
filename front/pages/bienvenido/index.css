@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.home-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  gap: 20px;
+}
+
+.input {
+  width: 312px;
+  height: 55px;
+}
+
+.select-class {
+  display: none;
+  flex-direction: column;
+}
+
+.label-text {
+  font-size: 24px;
+}

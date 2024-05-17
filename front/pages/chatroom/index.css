@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-chatroom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario-chatroom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-chatroom {
+  width: 312px;
+  height: 55px;
+}
+
+.chatroom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: solid;
+  min-width: 312px;
+  min-height: 450px;
+}
+.propio {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.propio .text-format {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 200px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+  width: fit-content;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #b9e97c;
+  justify-content: center;
+}
+
+.otrapersona .text-format {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-content: left;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+  background-color: #d8d8d8;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+p {
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+}
+
+.text-format1 {
+  color: #a5a5a5;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}

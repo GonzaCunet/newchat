@@ -1,0 +1,31 @@
+{
+  "name": "chatonline",
+  "version": "1.0.0",
+  "scripts": {
+    "dev-back": "nodemon --watch ./back/index.ts --exec ts-node ./back/index.ts",
+    "dev-front": "parcel serve ./front/index.html",
+    "build:front": "parcel build ./front/index.html",
+    "build:back": "tsc",
+    "build": "npm run build:front && npm run build:back",
+    "start": "node ./back/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase": "8.7.1",
+    "firebase-admin": "^12.0.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.3.4",
+    "nodemon": "^3.1.0",
+    "sweetalert2": "^11.10.8"
+  }
+}
