@@ -11,6 +11,9 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static("dist"));
 
+console.log(process.env.ENVIRONMENT);
+console.log(typeof process.env.ENVIRONMENT);
+
 const usersCollection = db.collection("users");
 const roomsCollection = db.collection("rooms");
 

@@ -1,6 +1,9 @@
 import * as admin from "firebase-admin";
 // import * as serviceAccount from "./key.json";
-const serviceAccount = require("./key.json");
+const serviceAccount =
+  process.env.ENVIRONMENT == "DEV"
+    ? require("./key.json")
+    : require("/etc/secrets/key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount as any),

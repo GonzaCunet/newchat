@@ -2,7 +2,7 @@
   "name": "chatonline",
   "version": "1.0.0",
   "scripts": {
-    "dev-back": "nodemon --watch ./back/index.ts --exec ts-node ./back/index.ts",
+    "dev-back": "nodemon --watch ./back/index.ts --exec ts-node ./back/dev.ts",
     "dev-front": "parcel serve ./front/index.html",
     "build:front": "parcel build ./front/index.html",
     "build:back": "tsc",
@@ -12,14 +12,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "parcel": "^2.12.0",
     "process": "^0.11.10",
-    "@types/node": "^20.12.12",
     "typescript": "^5.4.5"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "firebase": "8.7.1",
     "firebase-admin": "^12.0.0",

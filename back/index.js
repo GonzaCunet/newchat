@@ -11,6 +11,8 @@ const port = 3000;
 app.use(express.json());
 app.use(cors());
 app.use(express.static("dist"));
+console.log(process.env.ENVIRONMENT);
+console.log(typeof process.env.ENVIRONMENT);
 const usersCollection = db_1.db.collection("users");
 const roomsCollection = db_1.db.collection("rooms");
 app.post("/signup/", (req, res) => {
