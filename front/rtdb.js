@@ -2,7 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dataBase = exports.API_BASE_URL = void 0;
 const firebase_1 = require("firebase");
-exports.API_BASE_URL = "http://localhost:3000";
+exports.API_BASE_URL = process.env.ENVIRONMENT == "DEV"
+    ? "http://localhost:3000"
+    : "https://newchat-za33.onrender.com";
 const app = firebase_1.default.initializeApp({
     apiKey: "AIzaSyACD-PFhB7oZMNpkDK2JOxc0Rsqwdk_Pc8",
     authDomain: "el-fairbase.firebaseapp.com",
